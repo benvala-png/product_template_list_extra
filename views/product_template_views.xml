@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="product_template_tree_view_extra" model="ir.ui.view">
+        <field name="name">product.template.tree.extra</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_tree_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//tree" position="inside">
+                <!-- Image -->
+                <field name="image_128"
+                       optional="hide"
+                       widget="image"
+                       options="{'size': [32, 32]}"/>
+
+                <!-- Deposit -->
+                <field name="is_deposit" optional="hide"/>
+                <field name="deposit_product_id" optional="hide"/>
+
+                <!-- Fournisseur principal -->
+                <field name="main_supplier_id" optional="hide"/>
+                <field name="main_supplier_code" optional="hide"/>
+                <field name="main_supplier_price" optional="hide"/>
+                <field name="main_supplier_delay" optional="hide"/>
+                <field name="main_supplier_min_qty" optional="hide"/>
+
+                <!-- POS -->
+                <field name="available_in_pos" optional="hide"/>
+                <field name="to_weight" optional="hide"/>
+                <field name="pos_categ_id" optional="hide"/>
+
+                <!-- Identifiants -->
+                <field name="default_code" optional="hide"/>
+                <field name="barcode" optional="hide"/>
+
+                <!-- Catégorisation -->
+                <field name="categ_id" optional="hide"/>
+                <field name="product_tag_ids"
+                       optional="hide"
+                       widget="many2many_tags"/>
+
+                <!-- Prix -->
+                <field name="list_price" optional="hide"/>
+                <field name="standard_price" optional="hide"/>
+                <field name="taxes_id"
+                       optional="hide"
+                       widget="many2many_tags"/>
+                <field name="supplier_taxes_id"
+                       optional="hide"
+                       widget="many2many_tags"/>
+
+                <!-- Stock -->
+                <field name="type" optional="hide"/>
+                <field name="qty_available" optional="hide"/>
+                <field name="virtual_available" optional="hide"/>
+
+                <!-- Unités -->
+                <field name="uom_id" optional="hide"/>
+                <field name="uom_po_id" optional="hide"/>
+
+                <!-- Divers -->
+                <field name="active" optional="hide"/>
+                <field name="sale_ok" optional="hide"/>
+                <field name="purchase_ok" optional="hide"/>
+                <field name="company_id"
+                       optional="hide"
+                       groups="base.group_multi_company"/>
+                <field name="responsible_id" optional="hide"/>
+                <field name="weight" optional="hide"/>
+                <field name="volume" optional="hide"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
