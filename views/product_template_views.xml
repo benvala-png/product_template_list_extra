@@ -67,6 +67,9 @@
                 <field name="responsible_id" optional="hide"/>
                 <field name="weight" optional="hide"/>
                 <field name="volume" optional="hide"/>
+                <field name="write_date"
+                       optional="hide"
+                       string="Dernière modification"/>
             </xpath>
         </field>
     </record>
