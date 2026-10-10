@@ -1,5 +1,9 @@
 # product_template_list_extra (Odoo 16)
 
+> **In English —** Adds optional columns to the product list view (main supplier, price, lead time, deposit, POS, stock, units…) so products can be compared and checked without opening each form. All columns are hidden by default.
+
+*Documentation below is in French.*
+
 Addon Odoo 16 qui ajoute des colonnes optionnelles à la vue liste des fiches
 produit (`product.template`), pour retrouver ou comparer des fiches sans
 ouvrir chacune d'elles.

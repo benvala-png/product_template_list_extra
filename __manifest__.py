@@ -1,7 +1,7 @@
 {
     "name": "Product Template List Extra Columns",
     "version": "16.0.1.0.0",
-    "author": "Ben",
+    "author": "Benjamin Van Laethem",
     "license": "AGPL-3",
     "category": "Product",
     "depends": [
